@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span>LOGO</span>
+        <nav>
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+                <div class="container">
+                    <div class="hero-text">
+                        <h3>NEW COLLECTION</h3>
+                        <h1>Shop our BABYWEAR</h1>
+                        <p>"Tiny Toes, Trendy Clothes."</p>
+                    <button>Shop Now</button>
+                    </div>
+                    <img src="babywear.avif">
+                </div>
+        </section>
+
+        <section id="choices">
+            <div class="choices-container">
+                <a class="content-buttons" href="#"><button class="button"><p>NEW IN</p></a>
+                    </button>
+
+                <a class="content-buttons" href="#"><button class="button"><p>BABY</p></a>
+                    </button>
+
+                <a class="content-buttons" href="#"><button class="button"><p>LIFESTYLE</p></a>
+                    </button>
+                    
+                    <a class="content-buttons" href="#"><button class="button"><p>GIFTS</p></a>
+                        </button>
+                        
+            </div>
+        </section>
+               
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <p>Have a question or feedback? Send us a message!</p>
+    
+    <form action="submit_contact.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+            <p>&copy; 2023 Babywear | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

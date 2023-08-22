@@ -1,0 +1,210 @@
+$primary: #86A873;
+$secondary: #5AAA95;
+$tertiary: #095256;
+$light: #E5E1EE;
+$dark: #56494C;
+
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: $primary;
+
+    span {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    nav {
+        a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+
+            &:hover {
+                color: $tertiary;
+            }
+        }
+    }
+}
+
+#hero {
+
+    height: 700px;
+    @include flex-center-center;
+
+    .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        @include flex-center-center;
+
+        .hero-text {
+            width: 600px;
+            margin-right: 60px;
+        }
+
+        img {
+            height: 500px;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: $secondary;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: black;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        button {
+            background-color: $tertiary;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($primary, 10%);
+            }
+        }
+    }
+}
+
+#choices {
+    .choices-container {
+      @include flex-center-center;
+      background: $primary;
+      padding: 100px;
+  
+      .content-buttons {
+        text-decoration: none;
+        background: $secondary;
+        color: black;
+        transition: color 0.3s;
+        margin: 50px;
+
+        &:hover {
+          color: $tertiary;
+          font-weight: bold;
+        }
+  
+        .button {
+          border: none;
+          background: $tertiary;
+          cursor: pointer;
+          width: 300px;
+  
+          p {
+            font-size: 80px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    text-align: center;
+    padding: 80px;
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: $tertiary;
+    }
+    
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        text-align: left;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        
+        &:focus {
+          outline: none;
+          border-color: $tertiary;
+        }
+      }
+      
+      textarea {
+        resize: vertical;
+      }
+      
+      input[type="submit"] {
+        background-color: $tertiary;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        
+        &:hover {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+
+  
+  footer {
+    background-color: $primary;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    
+    p {
+      margin: 0;
+    }
+  }
+  
+  
+  
+  
+
+  
